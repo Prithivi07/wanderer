@@ -45,11 +45,11 @@ body, html {
 
 nav {
     background-color: #f0f0f0;
-    padding: 15px 30px;
+    padding: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .logo h1 a{
@@ -151,18 +151,59 @@ nav {
 
 .teamList::-webkit-scrollbar {
     width: 0;
-    background: transparent;
+    background:transparent;
 }
 
-.teamList {
+/* .teamList {
     scrollbar-width: none;
-}
+} 
 
-.teamList {
+ .teamList {
     -ms-overflow-style: none;
-}
+} */
 
 .teamList p{
     width:auto;
     color: black;
 }
+
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(pic4.png);
+    background-size: cover;
+    background-position: center;
+    color:rgb(0 0 0 / 57%);;
+}
+
+.contact h1{
+    font-size: 40px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+  #contactForm button {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #contactForm button:hover {
+    background-color: #0056b3;
+  }

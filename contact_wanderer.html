@@ -20,15 +20,22 @@
                 <button id="resetbtn">Clear</button>
             </div>
         </nav>        
-        <div class="main">
-            <div class="intro">
-                <ul><li>WANDER,</li>
-                    <li>DISCOVER,</li>
-                    <li>REPEAT...</li></ul>
-                <p>Welcome to Wanderer – where your next adventure begins! Whether you’re craving hidden gems, adrenaline-pumping thrills, or tranquil escapes, we’re here to turn your travel dreams into reality. Dive into a world of unforgettable experiences, where every journey sparks new stories. Ready to wander? 
-                    Let’s discover the extraordinary together!</p>
-            </div>
+        <div class="contact">
+            <h1>CONTACT US</h1>
+            <form id="contactForm">
+                <div><label for="name">NAME: </label>
+                <input type="text" name="qname" id="name" required><br><br></div>
+                <div><label for="email">EMAIL: </label>
+                <input type="text" name="qemail" id="email" required><br><br></div>
+                <div><label for="message">MESSAGE</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="(optional)"></textarea></div>
+                <button type="submit" onclick="thankyou()">Submit</button>
+            </form>
         </div>
-        <script src="travel_recommendation.js"></script>
+        <script>
+            function thankyou(){
+                alert('Thank you for contacting us!')
+            }
+          </script>
     </body> 
 </html>
