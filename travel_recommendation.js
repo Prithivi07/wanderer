@@ -1,4 +1,4 @@
-const images = ["pic1.png","pic2.png","pic3.png"];
+const images = ["pic1.png","pic2.png","pic3.png","pic4.png"];
 let curr=0;
 function changeBackground() {
     const bgdiv = document.querySelector(".main");
