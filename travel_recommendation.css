@@ -1,0 +1,258 @@
+body, html {
+    height: 100%;
+    margin:0
+  }
+  
+.main {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.intro{
+    margin:0;
+    padding: 20px;
+    padding-top: 100px;
+    padding-left: 70px;
+    width: 400px;
+    backdrop-filter: blur(20px);
+    display:flex;
+    flex-direction: column;
+}
+
+.intro ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.intro li{
+    display: inline;
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+    text-shadow: #000000;
+}
+
+.intro p{
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.logo h1 a{
+    margin: 0;
+    padding-right: 20px;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+}
+
+.search-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(pic1.png);
+    background-size: cover;
+    background-position: center;
+    color:rgb(0 0 0 / 57%);;
+}
+
+.about h1{
+    margin:0;
+    font-size: 40px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+}
+.about p{
+    width: 70%;
+    padding: 20px;
+    margin-top: 0;
+    align-content: center;
+    font-size: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.teamList{
+    width : 70%;
+    height: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.teamList::-webkit-scrollbar {
+    width: 0;
+    background:transparent;
+}
+
+/* .teamList {
+    scrollbar-width: none;
+} 
+
+ .teamList {
+    -ms-overflow-style: none;
+} */
+
+.teamList p{
+    width:auto;
+    color: black;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(pic4.png);
+    background-size: cover;
+    background-position: center;
+    color:rgb(0 0 0 / 57%);;
+}
+
+.contact h1{
+    font-size: 40px;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+  }
+  #contactForm button {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #contactForm button:hover {
+    background-color: #0056b3;
+  }
+
+  .searchResult{
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: scroll;
+    padding: 10px;
+    gap:10px;
+  }
+
+  .searchResult .place{
+    width:350px;
+    height: max-content;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:  0 4px 6px rgba(147, 70, 70, 0.1);
+  }
+
+  .place img{
+    width:100%;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  .place h3{
+    margin:0;
+  }
+
+  .place button{
+    color:white;
+    width: 30%;
+    padding: 5px;
+    background-color: rgb(69, 114, 217);
+    border-radius:5px;
+    box-shadow: 2px 3px;
+  }
+  .place button:hover{
+    color: rgb(69, 114, 217);
+    background-color: white;
+  }
